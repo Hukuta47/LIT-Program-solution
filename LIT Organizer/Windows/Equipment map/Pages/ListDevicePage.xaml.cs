@@ -1,5 +1,4 @@
-﻿using LIT_Organizer.Windows.Equipment_map.Classes;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,21 +10,21 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace LIT_Organizer.Windows.Equipment_map
+namespace LIT_Organizer.Windows.Equipment_map.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для EquipmentMap.xaml
+    /// Логика взаимодействия для ListDevicePage.xaml
     /// </summary>
-    public partial class EquipmentMap : Window
+    public partial class ListDevicePage : Page
     {
-        FrameHelper frameHelper;
-        public EquipmentMap()
+        public ListDevicePage()
         {
             InitializeComponent();
-            frameHelper = new FrameHelper();
 
+            DataGrid_ListCabinets.ItemsSource = App.dbEntites.CabinetDevicesEmployees.ToList();
         }
     }
 }

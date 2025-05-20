@@ -182,6 +182,7 @@
     <Compile Include="Database\sp_helpdiagrams_Result.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="Windows\Equipment map\Classes\FrameHelper.cs" />
     <Compile Include="Windows\Equipment map\EquipmentMap.xaml.cs">
       <DependentUpon>EquipmentMap.xaml</DependentUpon>
     </Compile>
@@ -189,10 +190,17 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Windows\Equipment map\Pages\ListDevicePage.xaml.cs">
+      <DependentUpon>ListDevicePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\StartWindow\StartWindow.xaml.cs">
       <DependentUpon>StartWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="Windows\Equipment map\EquipmentMap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Equipment map\Pages\ListDevicePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
