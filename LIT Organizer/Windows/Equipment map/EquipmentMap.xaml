@@ -9,6 +9,6 @@
 		ResizeMode="NoResize"
         Title="EquipmentMap" Height="450" Width="525">
 	<Grid>
-		<Frame Name=""/>
+		<Frame Name="mainFrame"/>
 	</Grid>
 </Window>

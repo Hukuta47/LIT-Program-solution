@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="3c43a94c84074eb9a51f56f9743f118e" Name="Diagram1">
+      <Diagram DiagramId="a1181f2bc16a4594a5a1e558ddfcead1" Name="Diagram1">
         <EntityTypeShape EntityType="LitDBModel.Bulding" Width="1.5" PointX="1.5" PointY="10.625" IsExpanded="true" />
         <EntityTypeShape EntityType="LitDBModel.Cabinet" Width="1.5" PointX="3.75" PointY="10.25" IsExpanded="true" />
         <EntityTypeShape EntityType="LitDBModel.Cartridge" Width="1.5" PointX="3" PointY="2.875" IsExpanded="true" />
@@ -21,7 +21,8 @@
         <EntityTypeShape EntityType="LitDBModel.Printer" Width="1.5" PointX="8.25" PointY="3.25" IsExpanded="true" />
         <EntityTypeShape EntityType="LitDBModel.PrinterStatus" Width="1.5" PointX="6" PointY="7.5" IsExpanded="true" />
         <EntityTypeShape EntityType="LitDBModel.ReasonForReplacement" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
-        <AssociationConnector Association="LitDBModel.FK__Cabinet__Bulding__619B8048" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="LitDBModel.CabinetDevicesEmployees" Width="1.5" PointX="7.75" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="LitDBModel.FK__Cabinet__Bulding__628FA481" ManuallyRouted="false" />
         <AssociationConnector Association="LitDBModel.FK__Cartridge__Cartr__46E78A0C" ManuallyRouted="false" />
         <AssociationConnector Association="LitDBModel.FK__Cartridge__Statu__47DBAE45" ManuallyRouted="false" />
         <AssociationConnector Association="LitDBModel.FK_Cartridge_CartridgeType" ManuallyRouted="false" />
@@ -41,7 +42,6 @@
         <AssociationConnector Association="LitDBModel.Device_LaptopIssuance" ManuallyRouted="false" />
         <AssociationConnector Association="LitDBModel.Employee_EmployeePosition" ManuallyRouted="false" />
         <AssociationConnector Association="LitDBModel.EmployeeLIT" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="LitDBModel.CabinetDevicesEmployees" Width="1.5" PointX="5.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

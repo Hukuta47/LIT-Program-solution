@@ -1,4 +1,5 @@
 ﻿using LIT_Organizer.Windows.Equipment_map.Classes;
+using LIT_Organizer.Windows.Equipment_map.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,12 +21,12 @@ namespace LIT_Organizer.Windows.Equipment_map
     /// </summary>
     public partial class EquipmentMap : Window
     {
-        FrameHelper frameHelper;
+        public static FrameHelper frameHelper;
         public EquipmentMap()
         {
             InitializeComponent();
-            frameHelper = new FrameHelper();
-
+            frameHelper = new FrameHelper(mainFrame);
+            mainFrame.Content = new ListDevicePage();
         }
     }
 }

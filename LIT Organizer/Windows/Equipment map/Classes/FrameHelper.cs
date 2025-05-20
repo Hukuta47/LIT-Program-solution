@@ -7,7 +7,7 @@ using System.Windows.Controls;
 
 namespace LIT_Organizer.Windows.Equipment_map.Classes
 {
-    internal class FrameHelper
+    public class FrameHelper
     {
         Frame FrameEquipmentMap;
         public FrameHelper(Frame FrameEquipmentMap)

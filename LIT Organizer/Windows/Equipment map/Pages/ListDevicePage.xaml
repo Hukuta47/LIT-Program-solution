@@ -54,7 +54,7 @@
 				<DataGridTemplateColumn Width="auto" >
 					<DataGridTemplateColumn.CellTemplate>
 						<DataTemplate>
-							<Button Width="40" Height="40">
+							<Button Width="40" Height="40" Click="CabinetButtonClick">
 								<Button.Content>
 									<Image Source="/Resources/png/24/List.png" Width="24"/>
 								</Button.Content>

@@ -176,12 +176,6 @@
     <Compile Include="Database\ReasonForReplacement.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="Database\sp_helpdiagramdefinition_Result.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Database\sp_helpdiagrams_Result.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
     <Compile Include="Windows\Equipment map\Classes\FrameHelper.cs" />
     <Compile Include="Windows\Equipment map\EquipmentMap.xaml.cs">
       <DependentUpon>EquipmentMap.xaml</DependentUpon>
@@ -190,6 +184,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Windows\Equipment map\Pages\EditingCabinetPage.xaml.cs">
+      <DependentUpon>EditingCabinetPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\Equipment map\Pages\ListDevicePage.xaml.cs">
       <DependentUpon>ListDevicePage.xaml</DependentUpon>
     </Compile>
@@ -197,6 +194,10 @@
       <DependentUpon>StartWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="Windows\Equipment map\EquipmentMap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Equipment map\Pages\EditingCabinetPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -262,18 +263,19 @@
   <ItemGroup>
     <Resource Include="Icon.ico" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="Database\Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model.Context.cs</LastGenOutput>
       <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Database\Model.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model.edmx</DependentUpon>
       <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Resources\png\24\List.png" />
   </ItemGroup>
   <ItemGroup>
