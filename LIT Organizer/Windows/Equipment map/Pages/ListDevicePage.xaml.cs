@@ -30,7 +30,10 @@ namespace LIT_Organizer.Windows.Equipment_map.Pages
 
         private void CabinetButtonClick(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(((sender as Button).DataContext as CabinetDevicesEmployees).CabinetName);
+            string CabinetName = ((sender as Button).DataContext as CabinetDevicesEmployees).CabinetName;
+            Cabinet cabinet = App.dbEntites.Cabinet.First(findCabinet => findCabinet.CabinetName == CabinetName);
+            EquipmentMap.frameHelper.FrameEquipmentMap.Navigate(new EditingCabinetPage(cabinet));
+
         }
     }
 }

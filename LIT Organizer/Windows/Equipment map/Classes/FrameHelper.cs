@@ -9,7 +9,7 @@ namespace LIT_Organizer.Windows.Equipment_map.Classes
 {
     public class FrameHelper
     {
-        Frame FrameEquipmentMap;
+        public Frame FrameEquipmentMap;
         public FrameHelper(Frame FrameEquipmentMap)
         {
             this.FrameEquipmentMap = FrameEquipmentMap;
